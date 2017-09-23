@@ -1,1 +1,1 @@
-alert('index');
+require('./index.scss')
