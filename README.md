@@ -1,2 +1,3 @@
-# hexo-theme-fedlab-dev
-Fedlab theme development environment for hexo
+# hexo-theme-fedlab
+
+fedlab theme for hexo
