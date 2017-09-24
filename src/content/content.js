@@ -1,1 +1,1 @@
-alert('content');
+require('./content.scss');

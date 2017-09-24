@@ -29,7 +29,7 @@
         }
         &.white {
             background-color: #fff;
-
+            box-shadow: 1px 1px 10px rgba(0,0,0,.2);
             .fedlab-header-nav-item {
                 &:hover,
                 &.current {
