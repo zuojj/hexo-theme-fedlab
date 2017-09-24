@@ -12,7 +12,7 @@
         top: 0;
         right: 0;
         z-index: 10;
-        padding: 19px 0;
+        padding: 15px 0;
         background-color: transparent;
         box-shadow: none;
         -webkit-transition: all .6s;
@@ -37,6 +37,21 @@
                         color: #f00;
                     }
                 }
+            }
+        }
+        /* logo */
+        &-logo {
+            float: left;
+            a {
+                display: block;
+                overflow: hidden;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #efefef;
+                background: #f00 url("http://zuojj.com/fedlab-logo.jpg");
+                background-size: 100% 100%;
+                text-indent: -999em;
             }
         }
         /* 导航 */
@@ -69,20 +84,7 @@
                 }
             }
         }
-        /* logo */
-        &-logo {
-            float: left;
-            padding: 6px 0;
-            a {
-                display: block;
-                overflow: hidden;
-                width: 130px;
-                line-height: 28px;
-                background: #f00 url("../assets/img/logo-white.png");
-                background-size: 100% 100%;
-                text-indent: -999em;
-            }
-        }
+
         /* search */
         &-search {
             float: right;
