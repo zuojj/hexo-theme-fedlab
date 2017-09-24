@@ -24,98 +24,101 @@
             margin: 0 auto;
             @extend %clearfix;
         }
-
         &.hide {
             margin-top: -80px;
         }
-
         &.white {
             background-color: #fff;
-            .fedlab-nav-item.current {
-                a {
-                    color: #f00;
+
+            .fedlab-header-nav-item {
+                &:hover,
+                &.current {
+                    a {
+                        color: #f00;
+                    }
                 }
             }
         }
-    }
-
-    /* 导航 */
-    &-nav {
-        float: left;
-        margin-left: 128px;
-        &-item {
+        /* 导航 */
+        &-nav {
             float: left;
-            position: relative;
-            height: 40px;
-            margin-right: 32px;
-            font-size: 16px;
-            &:hover,
-            &.current {
+            margin-left: 128px;
+            &-item {
+                float: left;
+                position: relative;
+                height: 40px;
+                margin-right: 32px;
+                font-size: 16px;
+                &:hover,
+                &.current {
+                    a {
+                        opacity: 1;
+                        color: #fff;
+                        border-color: #fff;
+                    }
+                }
                 a {
-                    opacity: 1;
-                    color: #fff;
-                    border-color: #fff;
+                    cursor: pointer;
+                    display: block;
+                    line-height: 37px;
+                    padding: 0 12px;
+                    border-bottom: 3px solid transparent;
+                    color: grey;
+                    -webkit-transition: color .3s ease-in, border-color .2s ease-in;
+                    transition: color .3s ease-in, border-color .2s ease-in;
                 }
             }
+        }
+        /* logo */
+        &-logo {
+            float: left;
+            padding: 6px 0;
             a {
-                cursor: pointer;
                 display: block;
-                line-height: 37px;
-                padding: 0 12px;
-                border-bottom: 3px solid transparent;
-                color: grey;
-                -webkit-transition: color .3s ease-in, border-color .2s ease-in;
-                transition: color .3s ease-in, border-color .2s ease-in;
+                overflow: hidden;
+                width: 130px;
+                line-height: 28px;
+                background: #f00 url("../assets/img/logo-white.png");
+                background-size: 100% 100%;
+                text-indent: -999em;
             }
         }
-    }
-
-    /* logo */
-    &-logo {
-        float: left;
-        padding: 6px 0;
-        a {
-            display: block;
-            overflow: hidden;
-            width: 130px;
-            line-height: 28px;
-            background: #f00 url("../assets/img/logo-white.png");
-            background-size: 100% 100%;
-            text-indent: -999em;
-        }
-    }
-    /* search */
-    &-search {
-        float: right;
-        @extend %clearfix;
-        &-form {
-            display: none;
-            padding-top: 6px;
-        }
-        &-btn,
-        &-icon {
-            float: left;
-            width: 28px;
-            text-indent: -999em;
-            @extend %input-button;
-        }
-        &-clear {
+        /* search */
+        &-search {
             float: right;
-            width: 28px;
-            text-indent: -999em;
-            @extend %input-button;
-        }
-        &-text {
-            float: left;
-            width: 348px;
-            margin: 0 5px;
-            padding: 0 5px;
-            color: #fff;
-            background-color: transparent;
-            font-size: 16px;
-            -webkit-animation: serInput .4s 80ms ease both;
-            animation: serInput .4s 80ms ease both;
-            @extend %input-button;
+            @extend %clearfix;
+            &-form {
+                display: none;
+                padding-top: 6px;
+            }
+            &-btn,
+            &-icon {
+                float: left;
+                width: 28px;
+                text-indent: -999em;
+                @extend %input-button;
+            }
+            &-btn {
+                margin-top: 6px;
+            }
+            &-clear {
+                float: right;
+                width: 28px;
+                text-indent: -999em;
+                @extend %input-button;
+            }
+            &-text {
+                float: left;
+                width: 348px;
+                margin: 0 5px;
+                padding: 0 5px;
+                color: #fff;
+                background-color: transparent;
+                font-size: 16px;
+                -webkit-animation: serInput .4s 80ms ease both;
+                animation: serInput .4s 80ms ease both;
+                @extend %input-button;
+            }
         }
     }
 }

@@ -13,33 +13,31 @@
             &-inner {
                 width: auto;
             }
-        }
-
-        &-logo {
-            width: 26.7%;
-
-            a {
-                width: 100%;
+            &-logo {
+                width: 26.7%;
+    
+                a {
+                    width: 100%;
+                }
             }
-        }
-
-        &-nav {
-            float: right;
-            margin-left: 0;
-
-            &-item {
-                margin-right: 0;
-                font-size: 14px;
-                &.current {
-                    a {
-                        color: #f00;
+            &-nav {
+                float: right;
+                margin-left: 0;
+    
+                &-item {
+                    margin-right: 0;
+                    font-size: 14px;
+                    &.current {
+                        a {
+                            color: #f00;
+                        }
                     }
                 }
             }
-        }
-
-        &-search {
-            display:none;
+    
+            &-search {
+                display:none;
+            }
         }
 
         &-hr {
