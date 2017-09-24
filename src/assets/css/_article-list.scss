@@ -6,6 +6,7 @@
 .fedlab-article {
     &-list {
         margin-left: -40px;
+        @extend %clearfix;
     }
     &-item {
         float: left;
@@ -56,6 +57,7 @@
             padding: 0 15px 10px;
             line-height: 24px;
             font-size: 14px;
+            @extend %clearfix;
             .author {
                 float: left;
                 &-avatar {

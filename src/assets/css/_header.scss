@@ -13,14 +13,29 @@
         right: 0;
         z-index: 10;
         padding: 19px 0;
-        background-color: #fff;
+        background-color: transparent;
         box-shadow: none;
         -webkit-transition: all .6s;
         transition: all .6s;
+        margin-top: 0;
         &-inner {
             max-width: 1200px;
             width: 1200px;
             margin: 0 auto;
+            @extend %clearfix;
+        }
+
+        &.hide {
+            margin-top: -80px;
+        }
+
+        &.white {
+            background-color: #fff;
+            .fedlab-nav-item.current {
+                a {
+                    color: #f00;
+                }
+            }
         }
     }
 
@@ -72,7 +87,9 @@
     /* search */
     &-search {
         float: right;
+        @extend %clearfix;
         &-form {
+            display: none;
             padding-top: 6px;
         }
         &-btn,
@@ -82,10 +99,7 @@
             text-indent: -999em;
             @extend %input-button;
         }
-        &-btn {
-            display: none;
-        }
-        &-close {
+        &-clear {
             float: right;
             width: 28px;
             text-indent: -999em;
@@ -108,9 +122,7 @@
 
 %input-button {
     height: 28px;
-    background-repeat: no-repeat;
     overflow: hidden;
     outline: 0;
     border: 0;
-    background-color: #fff;
 }

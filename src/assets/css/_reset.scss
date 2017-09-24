@@ -320,14 +320,3 @@ template {
 [draggable] {
     cursor: move
 }
-
-.clearfix {
-    &:before,
-    &:after {
-        content: '';
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
