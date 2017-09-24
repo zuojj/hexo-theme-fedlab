@@ -38,7 +38,7 @@
             }
         }
         &-title {
-            padding: 12px 20px 0;
+            padding: 10px 15px 0;
             h3 {
                 width: 100%;
                 overflow: hidden;
@@ -46,14 +46,14 @@
                 word-wrap: normal;
                 text-overflow: ellipsis;
                 word-break: break-all;
-                font-size: 20px;
+                font-size: 18px;
                 a {
                     color: #4f4f4f;
                 }
             }
         }
         &-footer {
-            padding: 10px 20px;
+            padding: 0 15px 10px;
             line-height: 24px;
             font-size: 14px;
             .author {

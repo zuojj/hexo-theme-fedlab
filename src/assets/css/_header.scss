@@ -13,7 +13,7 @@
         right: 0;
         z-index: 10;
         padding: 19px 0;
-        background-color: transparent;
+        background-color: #fff;
         box-shadow: none;
         -webkit-transition: all .6s;
         transition: all .6s;
@@ -22,37 +22,39 @@
             width: 1200px;
             margin: 0 auto;
         }
-        /* 导航 */
-        &-nav {
+    }
+
+    /* 导航 */
+    &-nav {
+        float: left;
+        margin-left: 128px;
+        &-item {
             float: left;
-            margin-left: 128px;
-            &-item {
-                float: left;
-                position: relative;
-                height: 40px;
-                margin-right: 32px;
-                font-size: 16px;
-                &:hover,
-                &.current {
-                    a {
-                        opacity: 1;
-                        color: #fff;
-                        border-color: #fff;
-                    }
-                }
+            position: relative;
+            height: 40px;
+            margin-right: 32px;
+            font-size: 16px;
+            &:hover,
+            &.current {
                 a {
-                    cursor: pointer;
-                    display: block;
-                    line-height: 37px;
-                    padding: 0 12px;
-                    border-bottom: 3px solid transparent;
-                    color: grey;
-                    -webkit-transition: color .3s ease-in, border-color .2s ease-in;
-                    transition: color .3s ease-in, border-color .2s ease-in;
+                    opacity: 1;
+                    color: #fff;
+                    border-color: #fff;
                 }
+            }
+            a {
+                cursor: pointer;
+                display: block;
+                line-height: 37px;
+                padding: 0 12px;
+                border-bottom: 3px solid transparent;
+                color: grey;
+                -webkit-transition: color .3s ease-in, border-color .2s ease-in;
+                transition: color .3s ease-in, border-color .2s ease-in;
             }
         }
     }
+
     /* logo */
     &-logo {
         float: left;
@@ -62,7 +64,7 @@
             overflow: hidden;
             width: 130px;
             line-height: 28px;
-            background: url("../assets/img/logo-white.png");
+            background: #f00 url("../assets/img/logo-white.png");
             background-size: 100% 100%;
             text-indent: -999em;
         }
