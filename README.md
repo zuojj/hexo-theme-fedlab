@@ -1,3 +1,5 @@
 # hexo-theme-fedlab
 
-fedlab theme for hexo
+A team blog or a personal blog theme for hexo
+
+> 开发中...
