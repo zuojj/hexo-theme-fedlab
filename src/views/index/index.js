@@ -1,6 +1,7 @@
+require('../../assets/font/iconfont.css');
 require('./index.scss');
 
-var header = document.querySelector('.fedlab-header'),
+/* var header = document.querySelector('.fedlab-header'),
     headerH = header.clientHeight;
 
 window.addEventListener('scroll', function() {
@@ -17,4 +18,4 @@ window.addEventListener('scroll', function() {
     }else {
         header.className = header.className.replace(/\shide/, '');
     }
-})
+}) */

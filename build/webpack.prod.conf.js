@@ -58,7 +58,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         // see https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
             filename: config.build.index,
-            template: 'src/index/index.ejs',
+            template: 'src/views/index/index.ejs',
             inject: true,
             chunks: ['index', 'vendor'],
             minify: {
@@ -75,7 +75,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         }),
         new HtmlWebpackPlugin({
             filename: config.build.content,
-            template: 'src/content/content.ejs',
+            template: 'src/views/content/content.ejs',
             inject: true,
             chunks: ['content', 'vendor'],
             minify: {
@@ -92,7 +92,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         }),
         new HtmlWebpackPlugin({
             filename: config.build.about,
-            template: 'src/about/about.ejs',
+            template: 'src/views/about/about.ejs',
             inject: true,
             chunks: ['about', 'vendor'],
             minify: {
@@ -125,11 +125,11 @@ var webpackConfig = merge(baseWebpackConfig, {
             chunks: ['vendor']
         }),
         // copy custom static assets
-        new CopyWebpackPlugin([{
+/*         new CopyWebpackPlugin([{
             from: path.resolve(__dirname, '../static'),
             to: config.build.assetsSubDirectory,
             ignore: ['.*']
-        }])
+        }]) */
     ]
 })
 

@@ -1,11 +1,20 @@
-.fedlab-footer {
-    padding: 50px 0;
-    background-color: #fff;
-    border-top: 1px solid #d6dae4;
-
-    &-inner {
-        width: 1200px;
-        max-width: 1200px;
-        margin: 0 auto;
+.fedlab {
+    &-footer {
+        background-color: #444;
+        color: #aaa;
+        padding: 15px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            @extend %max-width;
+        }
+        a {
+            color: #e15d5d;
+            &:hover {
+                color: #aaa;
+            }
+        }
     }
 }

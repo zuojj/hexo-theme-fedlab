@@ -1,0 +1,40 @@
+.fedlab {
+    &-menu {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        height: 45px;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        &-inner {
+            @extend %max-width;
+        }
+        &-list {
+            display: flex;
+            justify-content: center;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+            a {
+                display: block;
+                font-size: 12px;
+                color: #333;
+                text-transform: uppercase;
+                line-height: 45px;
+                letter-spacing: 0.02em;
+                &:hover {
+                    color: #e15d5d;
+                }
+            }
+        }
+    }
+}
