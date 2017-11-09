@@ -17,6 +17,7 @@
         display: grid;
         margin-bottom: 40px;
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-gap: 30px;
         @extend %max-width;
     }
     &-item {
