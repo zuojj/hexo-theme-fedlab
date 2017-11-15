@@ -4,20 +4,17 @@
  * @Date: 2017-09-24 15:44:42 
  */
 
+
+
 .fedlab-article {
-    margin: 120px auto 70px;
     a {
         color: #65a6ff;
     }
-    @extend %clearfix;
-    &-details {
-        float: left;
-        width: 800px;
-    }
-    &-con {
+    &-detail {
         background-color: #fff;
-        padding: 50px 39px;
-        border: 1px solid #dfdfdf;
+        padding: 50px 36px;
+        border: 1px solid #efefef;
+        box-sizing: border-box;
         &-title {
             h3 {
                 color: #3a3a3a;
@@ -101,11 +98,12 @@
         }
 
         &-prevnext {
+            display: flex;
+            justify-content: space-between;
             border-top: 1px solid #dfdfdf;
             padding-top: 20px;
             margin-top: 20px;
             color: #979797;
-            @extend %clearfix;
             .prev-page,
             .next-page {
                 max-width: 50%;
@@ -122,14 +120,6 @@
                         color:#3a3a3a;
                     }
                 }
-            }
-
-            .prev-page {
-                float: left;
-            }
-
-            .next-page {
-                float: right;
             }
         }
     }

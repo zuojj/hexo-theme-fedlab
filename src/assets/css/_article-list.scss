@@ -4,21 +4,12 @@
  * @Date: 2017-09-23 22:55:47 
  */
 
-.fedlab-main {
-    &-inner {
-        @extend %max-width;
-    }
-}
-
 .fedlab-article {
-    padding: 0 30px;
-    margin: 60px auto;
     &-list {
         display: grid;
         margin-bottom: 40px;
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
         grid-gap: 30px;
-        @extend %max-width;
     }
     &-item {
         position: relative;
