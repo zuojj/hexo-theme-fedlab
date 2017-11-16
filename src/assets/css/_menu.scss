@@ -18,18 +18,20 @@
         &-list {
             display: flex;
             justify-content: center;
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow: auto;
         }
         &-item {
-            &:not(:last-child) {
-                margin-right: 40px;
-            }
             a {
                 display: block;
+                padding: 0 20px;
                 font-size: 12px;
                 color: #333;
                 text-transform: uppercase;
                 line-height: 45px;
                 letter-spacing: 0.02em;
+                white-space: nowrap;
                 &:hover {
                     color: #e15d5d;
                 }

@@ -1,13 +1,17 @@
-
 @media only screen and (max-width: 479px) {
-    :root {
+     :root {
         --main-inner-padding: calc(var(--base-gap) * var(--screen-sm-col-num) * 1.5);
         --article-list-column-repeat: var(--screen-sm-col-num);
         --article-list-grid-gap: calc(var(--base-gap) * var(--screen-sm-col-num) * 2);
     }
     .fedlab {
         &-nav {
-            display: none;
+            &-menu {
+                display: flex;
+            }
+            &-list {
+                display: none;
+            }
         }
         &-header {
             &-title {
@@ -15,77 +19,65 @@
                 text-align: center;
             }
         }
-        &-menu {
-            display: none;
-        }
         &-slide {
             display: none;
         }
-        &-footer {
-            display: none;
+        &-menu {
+            &-list {
+                justify-content: flex-start;
+            }
+        }
+
+        &-article {
+            &-detail {
+                padding: 0;
+                border: none;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
-    :root {
+     :root {
         --main-inner-padding: calc(var(--base-gap) * var(--screen-md-col-num));
         --article-list-column-repeat: var(--screen-md-col-num);
         --article-list-grid-gap: calc(var(--base-gap) * var(--screen-md-col-num));
     }
     .fedlab {
         &-nav {
-            display: none;
-        }
-        &-menu {
-            display: none;
+            &-menu {
+                display: flex;
+            }
+            &-list {
+                display: none;
+            }
         }
         &-slide {
             display: none;
         }
-        &-footer {
-            display: none;
+
+        &-menu {
+            &-list {
+                justify-content: flex-start;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-    :root {
+     :root {
         --article-list-column-repeat: var(--screen-lg-col-num);
         --article-list-grid-gap: calc(var(--base-gap) * var(--screen-lg-col-num));
     }
     .fedlab {
-        &-nav {
-            display: none;
-        }
-        &-menu {
-            display: none;
-        }
         &-slide {
-            display: none;
-        }
-        &-footer {
             display: none;
         }
     }
 }
 
 @media only screen and (min-width: 1367px) {
-    :root {
+     :root {
         --main-inner-width: 1306px;
-    }
-    .fedlab {
-        &-nav {
-            display: none;
-        }
-        &-menu {
-            display: none;
-        }
-        &-slide {
-            display: none;
-        }
-        &-footer {
-            display: none;
-        }
     }
 }

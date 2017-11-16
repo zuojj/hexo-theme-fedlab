@@ -4,6 +4,7 @@
     --screen-lg-col-num: 3;
     --base-gap: 10px;
 
+
     --main-inner-width: auto;
     --main-inner-padding: calc(var(--base-gap) * var(--screen-lg-col-num));
     --article-list-column-repeat: var(--screen-lg-col-num);
@@ -27,7 +28,7 @@
 @import "./_article-list";
 
 // content.html
-@import "./_article-details";
+@import "./_article-detail";
 
 // about.html
 @import './_about';

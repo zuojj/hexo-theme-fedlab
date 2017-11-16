@@ -8,7 +8,37 @@
             justify-content: space-between;
             @extend %max-width;
         }
-
+        &-menu {
+            display: none;
+            flex-direction: column;
+            width: 16px;
+            height: 16px;
+            padding: 12px 12px 12px 0; //justify-content: space-between;
+            &.close {
+                .menu-line {
+                    transform-origin: center;
+                    &:nth-child(1) {
+                        transform: rotate(45deg) translate3d(5px, 5px, 0);
+                    }
+                    &:nth-child(2) {
+                        transform: scale3d(0, 1, 1);
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg) translate3d(5px, -5px, 0);
+                    }
+                }
+            }
+            .menu-line {
+                display: inline-block;
+                width: 16px;
+                height: 2px;
+                background: #fff;
+                transition: all 0.3s ease-out;
+                &:nth-child(2) {
+                    margin: 5px 0;
+                }
+            }
+        }
         &-list {
             display: flex;
         }
