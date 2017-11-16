@@ -1,5 +1,5 @@
-require('../../assets/font/iconfont.css');
-require('./index.scss');
+
+require('../../assets/css/index.scss');
 
 /* var header = document.querySelector('.fedlab-header'),
     headerH = header.clientHeight;

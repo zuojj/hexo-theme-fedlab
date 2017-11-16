@@ -8,8 +8,8 @@
     &-list {
         display: grid;
         margin-bottom: 40px;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-        grid-gap: 30px;
+        grid-template-columns: repeat(var(--article-list-column-repeat), 1fr);
+        grid-gap: var(--article-list-grid-gap);
     }
     &-item {
         position: relative;
@@ -106,11 +106,5 @@
                 }
             }
         }
-    }
-}
-
-@media (min-width: 1140px) {
-    .fedlab-article {
-        width: 1140px;
     }
 }

@@ -1,2 +1,2 @@
-require('../../assets/font/iconfont.css');
-require('./content.scss');
+
+require('../../assets/css/index.scss');
