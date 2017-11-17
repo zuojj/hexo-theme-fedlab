@@ -20,9 +20,18 @@ exports.cssLoaders = function (options) {
         }
     }
 
+    var postcssLoader = {
+        loader: 'postcss-loader',
+        options: {
+            plugins: [
+                require('autoprefixer')()
+            ]
+        }
+    }
+
     // generate loader string to be used with extract text plugin
     function generateLoaders(loader, loaderOptions) {
-        var loaders = [cssLoader]
+        var loaders = [cssLoader, postcssLoader]
         if (loader) {
             loaders.push({
                 loader: loader + '-loader',
