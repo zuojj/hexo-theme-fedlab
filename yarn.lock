@@ -1469,7 +1469,14 @@ ejs-loader@^0.3.0:
     loader-utils "^0.2.7"
     lodash "^3.6.0"
 
-ejs@^2.5.6:
+ejs-render-loader@^1.0.0:
+  version "1.0.0"
+  resolved "http://10.143.52.194:4873/ejs-render-loader/-/ejs-render-loader-1.0.0.tgz#664de5541023a1e21ab8952f1558adba02be9f78"
+  dependencies:
+    ejs "^2.0.0"
+    loader-utils "^0.2.7"
+
+ejs@^2.0.0, ejs@^2.5.6:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.7.tgz#cc872c168880ae3c7189762fd5ffc00896c9518a"
 

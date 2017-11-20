@@ -25,6 +25,7 @@
         "copy-webpack-plugin": "^4.0.1",
         "css-loader": "^0.28.1",
         "ejs-loader": "^0.3.0",
+        "ejs-render-loader": "^1.0.0",
         "es3ify-loader": "^0.2.0",
         "eventsource-polyfill": "^0.9.6",
         "express": "^4.15.2",
