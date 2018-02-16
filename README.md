@@ -1,3 +1,3 @@
 # FEDLAB
 
-A theme for [Hexo].
+A Theme For [Hexo].
