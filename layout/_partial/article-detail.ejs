@@ -1,0 +1,36 @@
+<div class="fedlab-article">
+    <div class="fedlab-article-detail">
+        <div class="fedlab-article-detail-title">
+            <h2><%= page.title %></h2>
+        </div>
+        <p class="fedlab-article-detail-meta">By
+            <a href="https://github.com/<%= page.author %>" target="_blank"><%= page.author %></a> At <%= date(page.date, 'YYYY-MM-DD hh:mm:ss') %></p>
+        <!-- <div class="fedlab-article-detail-banner">
+            <img src="<%= page.cover %>" alt="<%= page.title %>">
+        </div> -->
+        <div class="fedlab-article-detail-text">
+            <div class="content-text">
+                <%- page.content %>
+            </div>
+        </div>
+        <div class="fedlab-article-detail-reprint">
+            <p>
+                <span>本文出自</span>
+                <a href="<%= config.url %>" hidefocus="true"><%= config.title %></a>，转载时请注明出处，谢谢合作。
+                格式为：<%= config.title %>博客文章 - <a href="<%= page.permalink %>" hidefocus="true"><%= page.title %></a>
+            </p>
+        </div>
+        <div class="fedlab-article-detail-prevnext">
+            <p class="prev-page">
+                <% if (page.prev) { %>
+                    <a href="<%- url_for(page.prev.path) %>" rel="prev" hidefocus="true">上一篇：<%= page.prev.title %></a>
+                <% } %>
+            </p>
+            <p class="next-page">
+                <% if (page.next) { %>
+                    <a href="<%- url_for(page.next.path) %>" rel="next" hidefocus="true">下一篇：<%= page.next.title %></a>
+                <% } %>
+            </p>
+        </div>
+    </div>
+</div>

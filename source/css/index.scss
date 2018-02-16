@@ -1,0 +1,39 @@
+:root {
+    --screen-sm-col-num: 1;
+    --screen-md-col-num: 2;
+    --screen-lg-col-num: 3;
+    --base-gap: 10px;
+
+
+    --main-inner-width: auto;
+    --main-inner-padding: calc(var(--base-gap) * var(--screen-lg-col-num));
+    --article-list-column-repeat: var(--screen-lg-col-num);
+    --article-list-grid-gap: calc(var(--base-gap) * var(--screen-lg-col-num));
+}
+
+@import "./_mixin";
+@import "./_reset";
+@import "./font/iconfont.css";
+@import "./_outer.scss";
+@import "./_container";
+@import "./_nav";
+@import "./_menu";
+// @import "./_slide";
+@import "./_header";
+@import "./_search";
+@import "./_main";
+@import "./pagination";
+@import "./_footer";
+@import "./_backtop";
+
+// index.html
+@import "./_article-list";
+
+// content.html
+@import "./_article-detail";
+
+// about.html
+@import './_about';
+
+@import './_media';
+

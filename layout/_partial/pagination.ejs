@@ -1,0 +1,11 @@
+<% if (page.total > 1){ %>
+<nav class="fedlab-pagination">
+    <% var prev_text = "&laquo; " + 'prev';var next_text = 'next' + " &raquo;"%>
+    <%- paginator({
+        end_size: 1,
+        mid_size: 2,
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;'
+    }) %>
+</nav>
+<% } %>

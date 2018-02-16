@@ -1,0 +1,43 @@
+<div class="fedlab-article">
+    <div class="fedlab-article-list">
+        <%
+        var _cate_ = page.category,
+            _posts;
+        _posts = (page.posts || []).filter(function (post, index) {
+            var cate = post.categories && post.categories.data && post.categories.data[0] && post.categories.data[0].name;
+            return !_cate_ || cate === _cate_;
+        });
+        %>
+        <% if (_posts.length) {%>
+            <% _posts.forEach(function (post, index) {var cate = post.categories && post.categories.data && post.categories.data[0] && post.categories.data[0].name; %>
+                <div class="fedlab-article-item">
+                    <a class="post-thumb" href="<%- url_for(post.path) + '#' + cate %>">
+                        <img src="<%=post.cover%>">
+                    </a>
+                    <div class="post-category">
+                        <a href="<%- url_for(config.category_dir + '/' + cate) %>"><%= cate %></a>
+                    </div>
+                    <div class="post-title">
+                        <h2>
+                            <a href="<%- url_for(post.path) + '#' + cate %>"><%= post.title %></a>
+                        </h2>
+                    </div>
+                    <div class="post-abstract">
+                        <p><%= post.abstract %></p>
+                    </div>
+                    <div class="post-meta">
+                        <div class="post-author">
+                            <a href="https://github.com/<%=post.author %>" target="_blank">
+                                <img class="post-author-avatar" src="//dlweb.sogoucdn.com/webx-team/avatar/<%= post.author %>.jpg">
+                            </a>
+                            <span class="post-author-name"><%= post.author %></span>
+                        </div>
+                        <div class="post-date"><%= date(post.date, 'YYYY-MM-DD') %></div>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <div>无内容</div>
+        <% } %>
+    </div>
+</div>

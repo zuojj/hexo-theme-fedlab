@@ -1,0 +1,23 @@
+.fedlab {
+    &-slide {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            grid-column-gap: 1px;
+            grid-row-gap: 10px;
+        }
+        &-item {
+            position: relative;
+            padding-bottom: 65%;
+            background-color: #abc;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

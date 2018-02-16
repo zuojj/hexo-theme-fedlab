@@ -1,0 +1,26 @@
+<nav class="fedlab-menu">
+    <div class="fedlab-menu-inner fedlab-container">
+        <ul class="fedlab-menu-list">
+            <li class="fedlab-menu-item">
+                <a href="/">全部</a>
+            </li>
+            <%
+                function getCateName () {
+                    var _menus_ = site.categories.data,
+                        res = [];
+
+                    for (var item in _menus_) { 
+                        var cateName = _menus_[item] && _menus_[item].name;
+                        cateName && res.push(cateName);
+                    }
+                    return res.sort();
+                }
+                getCateName().forEach(function (item) {
+            %>
+                <li class="fedlab-menu-item">
+                    <a href="<%- url_for(config.category_dir + '/' + item + '/index.html') + '#' + item %>"><%= item %></a>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</nav>

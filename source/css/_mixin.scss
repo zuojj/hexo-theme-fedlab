@@ -1,0 +1,17 @@
+
+%clearfix {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+%max-width {
+    width: 1306px;
+    padding: 0 30px;
+    margin: 0 auto;
+}

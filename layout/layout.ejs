@@ -1,0 +1,21 @@
+
+<%- partial('_partial/head', null, {cache: !config.relative_link}) %>
+
+<%- partial('_partial/nav', null, {cache: !config.relative_link}) %>
+
+<%- partial('_partial/search', null, {cache: !config.relative_link}) %>
+
+<%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+
+<% if (is_home() || is_category() || is_post()) { %>
+    <%- partial('_partial/menu', null, {cache: !config.relative_link}) %>
+<% } %>
+
+<main class="fedlab-main">
+    <div class="fedlab-main-inner fedlab-container">
+        <%- body %>
+        <%- partial('_partial/pagination') %>
+    </div>
+</main>
+
+<%- partial('_partial/footer', null, {cache: !config.relative_link}) %>

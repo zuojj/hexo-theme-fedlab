@@ -1,0 +1,38 @@
+/*
+ * @Author: zuojj
+ * @Description: 查看更多  
+ * @Date: 2017-09-23 23:03:10 
+ */
+.fedlab-pagination {
+    font-size: 16px;
+    text-align: center;
+    line-height: 44px;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    & a,
+    & span {
+        display: inline-block;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #aaa;
+
+        &.page-number,
+        &.space {
+            padding: 0 10px;
+            &.current {
+                color: #e15d5d;
+            }
+        }
+        &[rel="prev"] {
+            float: left;
+        }
+        &[rel="next"] {
+            float: right;
+        }
+    }
+}

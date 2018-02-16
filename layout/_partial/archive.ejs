@@ -1,0 +1,7 @@
+<% if (pagetype === 'index') { %>
+    <%- partial('article-list') %>
+<% } else if (pagetype === 'post') { %>
+    <%- partial('article-detail') %>
+<% } else if (pagetype === 'page') { %>
+    <%- partial('article-page') %>
+<% }%>
